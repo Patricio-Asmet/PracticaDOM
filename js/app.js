@@ -7,7 +7,7 @@ const cambiarTitulo = ()=>{
     const tituloPrincipal = document.querySelector('h1');
     console.log(tituloPrincipal);
     //modificar el titulo
-    tituloPrincipal.innerHTML = 'Titulo generado desde <b>JS</b>';
+    tituloPrincipal.innerHTML = 'Titulo generado desde <b>JS</b>';  // si no se usa html se puede utilizar  tituloPrincipal.innertext, este ultimo no interpreta html
     tituloPrincipal.className = 'display-1 text-info'
 }
 
@@ -16,7 +16,7 @@ const verMas = ()=>{
     // OPCION 1
     //crear un parrafo nuevo
     const parrafoNuevo = document.createElement('p'); //<p></p>
-    parrafoNuevo.innerHTML = 'También puedes añadir oyentes de eventos para responder a interacciones del usuario, como clics o pulsaciones de teclas. Es crucial tener en cuenta el rendimiento al manipular el DOM, ya que operaciones frecuentes pueden impactar en el rendimiento de la página. En resumen, el DOM proporciona una interfaz poderosa para manipular la estructura y el contenido de una página web, lo que permite crear interacciones dinámicas y experiencias personalizadas para los usuarios.'
+    parrafoNuevo.innerHTML = 'También puedes añadir oyentes de eventos para responder a interacciones del usuario, como clics o pulsaciones de teclas. Es crucial tener en cuenta el    rendimiento al manipular el DOM, ya que operaciones frecuentes pueden impactar en el rendimiento de la página. En resumen, el DOM proporciona una interfaz poderosa para manipular la estructura y el contenido de una página web, lo que permite crear interacciones dinámicas y experiencias personalizadas para los usuarios.'
     console.log(parrafoNuevo)
     //agregar el parrafo en el HTML
     
@@ -26,4 +26,4 @@ const verMas = ()=>{
 const btnVerMas = document.getElementById('btnVerMas');
 
 //agregar un manejador de eventos
-btnVerMas.addEventListener('click', verMas);
+btnVerMas.addEventListener('click', verMas);  // si la funcion no tiene parametros, va sin parentesis
